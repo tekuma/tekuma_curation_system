@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  24 APR 2017 21:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  24 APR 2017 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,10 +464,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
+[3 <./img/artist.jpg>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-[3 <./img/artist.jpg>] [4]
+ [4]
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
@@ -500,24 +501,32 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 143.
- [5] [6] (/home/stwhite/tekuma/report/tekuma_report.aux)
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 148.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [5]
+Overfull \hbox (2.50165pt too wide) in paragraph at lines 153--154
+\OT1/ptm/b/n/12 Right Fea-ture \OT1/ptm/m/n/12 ($\OT1/pcr/m/n/12 https : / / arxiv . org / pdf / 1505 . 00855v1 . pdf$\OT1/ptm/m/n/12 ) De-tails large scale
+ []
+
+[6] (/home/stwhite/tekuma/report/tekuma_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7517 strings out of 493013
- 116731 string characters out of 6135683
+ 7555 strings out of 493013
+ 117279 string characters out of 6135683
  301725 words of memory out of 5000000
- 10911 multiletter control sequences out of 15000+600000
- 35011 words of font info for 77 fonts, out of 8000000 for 9000
+ 10944 multiletter control sequences out of 15000+600000
+ 35526 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,10n,51p,8872b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (6 pages, 205027 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (6 pages, 218854 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

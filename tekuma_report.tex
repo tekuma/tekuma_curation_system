@@ -79,7 +79,7 @@ The infrastructure which would most help Tekuma’s curation process was not cle
 
 \begin{figure}
     \includegraphics[scale=.5]{./img/tekuma-1}
-    \caption{Arist-Curator System Diagram}
+    \caption{Arist-Curator System Diagram: (1) The daemon-server listens to the Firebase DBs and can insert into the SQL DB. (2) Firebase Databases hold all interface-state related data for both portals. (3) The storage bucket holds all of Tekuma's images, and acts as a CDN to the portals. (4) The curator-server mediates queries from the curator to the SQL DB.}
     \label{}
 \end{figure}
 
@@ -145,7 +145,14 @@ actual_row = [ '30742196502A',
 
 \section{Related Work}
 \begin{enumerate}
-    \item\textbf{ArtFlip} ( https://www.artflip.com/product) A website very similar in UI and UX to the curator portal.
+    \item\textbf{ArtFlip} (\url{https://www.artflip.com/product}) A website very similar in UI and UX to the curator portal.
+    \item\textbf{Artsy}  (\url{https://www.artsy.net/collect})
+    \item\textbf{Canvis} (\url{http://canviz.co/contact/})  A mass producible digital picture frame, including 3D printer files.
+    \item\textbf{StitchFix} (\url{https://www.stitchfix.com/})  a clothing company which uses a mixture of expert human stylists and artificial intelligence to pick out outfits for customers on a subscription plan.
+    \item\textbf{Turning Art} (\url{https://www.turningart.com/gallery}) A curator company with a similar buisness model of directed towards office, commericial, and multi-family real estate.
+    \item\textbf{Large-scale Classification of Fine-Art Paintings} (\url{https://arxiv.org/pdf/1505.00855v1.pdf}) Details large scale classification algorithms for fine art paintings.
+    \item\textbf{A Neural Algorithm of Artistic Style} (\url{https://arxiv.org/pdf/1508.06576.pdf}) Describes methods of transfering artist styles between artworks use Convolutional Neural Nets.
+    \item\textbf{Inceptionism: Going Deeper into Neural Networks} (\url{https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html}) Discussion of Google Deepdream 
 \end{enumerate}
 
 \section{Potential Innovative Development Projects}
