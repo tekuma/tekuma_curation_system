@@ -54,7 +54,7 @@
 \maketitle % Print the title
 
 \section{Overview}
-There has been approximately one year to date of active, ongoing technologies development at Tekuma, Inc. When development began in June 2016, very little web infrastructure existed besides the tekuma homepage\footnote{http://tekuma.io. A WordPress static website}. The first goal realized was to build a system for onboarding, cataloging, and accessing artworks in an effort to streamline the art curation process happening at Tekuma, and provide a more scalable business model. One year later, much of the infrastructure for this goal has been implemented, and is ready for innovative and more marketable applications to be built on top of this curation infrastructure.
+There has been approximately one year to date of active, ongoing technologies development at Tekuma, Inc. When development began in June 2016, very little web infrastructure existed besides the tekuma homepage\footnote{http://tekuma.io. A WordPress static website}. The first goal realized was to build a system for onboarding, cataloging, and accessing artworks in an effort to streamline the art curation process happening at Tekuma, and provide a more scalable business model. One year later, much of the infrastructure for this goal has been implemented, and is ready for innovative and more marketable applications to be built on top of this curation infrastructure. (give a total count of lines of code, components, etc)
 
 \section{Components}
 The infrastructure which would most help Tekuma’s curation process was not clear at the time development began. Design decisions were made as they arose, as Tekuma's needs and use cases were evolving with the development. Different prototypes were being tested to analyze different possible web technologies that could be used. After two weeks of prototyping, it became apparent that some preliminary specification needed to be defined in order to structure development of the core infrastructure and to drive production forward. In June 2016, Stephen decided that a four-sided approach would best meet the needs of Tekuma’s complex business model, and multiple targeted users. Specifically, an underlying cloud-based system serves 4 web apps to act as portals into different parts of Tekuma's curation system. These web apps are referred to as the ABCD user abstraction. This model is described below and summarized in figure (2.1), where each entry represents an online hosted application. All code connected to the curation system is stored in Tekuma's GitHub. \footnote{https://github.com/tekuma}
@@ -75,6 +75,12 @@ The infrastructure which would most help Tekuma’s curation process was not cle
     \end{tabular}
     \caption{the ABCD User Abstraction}
     \label{label}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[scale=.5]{./img/tekuma-1}
+    \caption{Arist-Curator System Diagram}
+    \label{}
 \end{figure}
 
 \subsection{Boilerplate}

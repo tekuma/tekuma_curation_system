@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  14 APR 2017 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  24 APR 2017 21:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -316,7 +316,11 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@orf=\skip70
 ) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-) (/home/stwhite/tekuma/report/tekuma_report.aux)
+) (/home/stwhite/tekuma/report/tekuma_report.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `tekuma_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -422,8 +426,13 @@ Missing character: There is no ™ in font ptmr7t!
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 67.
+ <./img/tekuma-1.png, id=9, 501.875pt x 501.875pt>
+File: ./img/tekuma-1.png Graphic file (type png)
+ <use ./img/tekuma-1.png>
+Package pdftex.def Info: ./img/tekuma-1.png used on input line 81.
+(pdftex.def)             Requested size: 250.93687pt x 250.93687pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 80.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 86.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -445,67 +454,70 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <./img/artist.jpg, id=9, 1204.5pt x 722.7pt>
+ [2 <./img/tekuma-1.png>] <./img/artist.jpg, id=15, 1204.5pt x 722.7pt>
 File: ./img/artist.jpg Graphic file (type jpg)
  <use ./img/artist.jpg>
-Package pdftex.def Info: ./img/artist.jpg used on input line 86.
+Package pdftex.def Info: ./img/artist.jpg used on input line 92.
 (pdftex.def)             Requested size: 240.89574pt x 144.53743pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-[2]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [3 <./img/artist.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[3 <./img/artist.jpg>] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (34.2501pt too wide) in paragraph at lines 129--130
+Overfull \hbox (34.2501pt too wide) in paragraph at lines 135--136
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[4]
-Overfull \hbox (12.64989pt too wide) in paragraph at lines 132--133
+
+Overfull \hbox (12.64989pt too wide) in paragraph at lines 138--139
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (19.84996pt too wide) in paragraph at lines 135--136
+Overfull \hbox (19.84996pt too wide) in paragraph at lines 141--142
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.0504pt too wide) in paragraph at lines 136--137
+Overfull \hbox (63.0504pt too wide) in paragraph at lines 142--143
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 137.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 143.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 137.
- [5] (/home/stwhite/tekuma/report/tekuma_report.aux) ) 
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 143.
+ [5] [6] (/home/stwhite/tekuma/report/tekuma_report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7511 strings out of 493013
- 116624 string characters out of 6135683
- 300140 words of memory out of 5000000
- 10907 multiletter control sequences out of 15000+600000
+ 7517 strings out of 493013
+ 116731 string characters out of 6135683
+ 301725 words of memory out of 5000000
+ 10911 multiletter control sequences out of 15000+600000
  35011 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,11n,51p,8872b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,10n,51p,8872b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (5 pages, 182906 bytes).
+Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (6 pages, 205027 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 44 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
