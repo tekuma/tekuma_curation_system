@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  24 APR 2017 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  26 APR 2017 15:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,6 +320,9 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 \openout1 = `tekuma_report.aux'.
 
@@ -468,65 +471,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+ <./img/curator.png, id=19, 1673.25125pt x 915.42pt>
+File: ./img/curator.png Graphic file (type png)
+ <use ./img/curator.png>
+Package pdftex.def Info: ./img/curator.png used on input line 107.
+(pdftex.def)             Requested size: 334.64432pt x 183.08075pt.
+ [4 <./img/curator.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[5] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (34.2501pt too wide) in paragraph at lines 135--136
+Overfull \hbox (34.2501pt too wide) in paragraph at lines 140--141
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (12.64989pt too wide) in paragraph at lines 138--139
+Overfull \hbox (12.64989pt too wide) in paragraph at lines 143--144
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (19.84996pt too wide) in paragraph at lines 141--142
+Overfull \hbox (19.84996pt too wide) in paragraph at lines 146--147
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.0504pt too wide) in paragraph at lines 142--143
+Overfull \hbox (63.0504pt too wide) in paragraph at lines 147--148
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 143.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 148.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 143.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 148.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 148.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 153.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [5]
-Overfull \hbox (2.50165pt too wide) in paragraph at lines 153--154
-\OT1/ptm/b/n/12 Right Fea-ture \OT1/ptm/m/n/12 ($\OT1/pcr/m/n/12 https : / / arxiv . org / pdf / 1505 . 00855v1 . pdf$\OT1/ptm/m/n/12 ) De-tails large scale
+) [6]
+Overfull \hbox (23.16483pt too wide) in paragraph at lines 160--161
+[]\OT1/ptm/b/n/12 Inceptionism: Go-ing Deeper into Neu-ral Net-works \OT1/ptm/m/n/12 ($\OT1/pcr/m/n/12 https : / / research . googleblog .
  []
 
-[6] (/home/stwhite/tekuma/report/tekuma_report.aux)
+
+Overfull \hbox (9.36276pt too wide) in paragraph at lines 160--161
+\OT1/pcr/m/n/12 com / 2015 / 06 / inceptionism-[]going-[]deeper-[]into-[]neural . html$\OT1/ptm/m/n/12 ) Dis-cus-sion
+ []
+
+[7] [8] (/home/stwhite/tekuma/report/tekuma_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7555 strings out of 493013
- 117279 string characters out of 6135683
- 301725 words of memory out of 5000000
- 10944 multiletter control sequences out of 15000+600000
- 35526 words of font info for 79 fonts, out of 8000000 for 9000
+ 7563 strings out of 493013
+ 117406 string characters out of 6135683
+ 301668 words of memory out of 5000000
+ 10949 multiletter control sequences out of 15000+600000
+ 37210 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,10n,51p,8872b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (6 pages, 218854 bytes).
+ 54i,11n,51p,8872b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (8 pages, 861528 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

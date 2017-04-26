@@ -103,9 +103,17 @@ The primary goal of the portal is to handle uploaded and cataloging of artworks.
 
 \subsection{Business}
 \subsection{Curator}
+
+
 server and daemon (modularity)
 
 \subsubsection{Curator Search}
+\begin{figure}
+    \includegraphics[scale=0.2]{./img/curator}
+    \caption{Screenshot from the Curator Portal}
+    \label{}
+\end{figure}
+
 \subsubsection{Curator Manage}
 \subsubsection{Curator Review}
 (discuss daemon)
@@ -152,11 +160,20 @@ actual_row = [ '30742196502A',
     \item\textbf{Turning Art} (\url{https://www.turningart.com/gallery}) A curator company with a similar buisness model of directed towards office, commericial, and multi-family real estate.
     \item\textbf{Large-scale Classification of Fine-Art Paintings} (\url{https://arxiv.org/pdf/1505.00855v1.pdf}) Details large scale classification algorithms for fine art paintings.
     \item\textbf{A Neural Algorithm of Artistic Style} (\url{https://arxiv.org/pdf/1508.06576.pdf}) Describes methods of transfering artist styles between artworks use Convolutional Neural Nets.
-    \item\textbf{Inceptionism: Going Deeper into Neural Networks} (\url{https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html}) Discussion of Google Deepdream 
+    \item\textbf{Inceptionism: Going Deeper into Neural Networks} (\url{https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html}) Discussion of Google Deepdream
 \end{enumerate}
 
 \section{Potential Innovative Development Projects}
+\subsection{Collaborative Art Recommender System}
+ This section details methods which are \textit{agnostic} to the content. In other words, the AI is unaware that it is filtering artworks specifically. Collaborative filtering is currently a ubiquitous feature of internet based creative content platforms such as Spotify and Netflix. Collaborative filtering is commonly implemented with either data clustering, or low-rank matrix multiplication (better for sparse data), and relies on having a active user base. The underlying assumption of collaborative filtering is that if user (A) likes artworks {a,b,c,d} and user (B) likes artworks {a,b,c}, then it is likely he will also like artwork {d} as well. The strength of this method is that it is agnostic to the content, which is especially powerful for art and media, as it is inherently abstract and hard to break it down into concrete features.
 
+\subsection{TekumAI, Curated Recommender System}
+ This section details methods which are \textit{content-based}, meaning that the features of the artwork are directly considered by the system. This relies on the assumption that all artworks in the system have a concrete list of their features, known as a feature vector. Features in this vector have a numerical representation, and are chosen such that they partition the artworks into separate sets which people might conceivably assign different preferences to. Then, each use is assigned a vector, $\theta$, which is continually updated to reflect the user's preferences. When this vector is initialized (usually with random values), it is not very powerful. This is known as the cold-start problem. Methods for circumventing cold start can "borrow" data from other places. Specifically, data could be borrowed from similar users, such as descbried in the previous section with collaborative filtering. The user could also be presented with a survey of his art tastes, which could be used to initialize the vector to something more accurate than if it was just set to random values. Given a feature vector $x^{(i)}$, we can predict a rating $\hat{y}$ by:
+ $$ \hat{y}^{(i)} = \theta \cdot x^{(i)} = \sum_{j=1}^d \theta_jx^{(i)}_j $$
+
+
+- "Good features are those that partition the artworks into sets that people might
+conceivably assign different preferences to"
 
 
 \end{document}
