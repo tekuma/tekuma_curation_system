@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1493838559 "tekuma_report.tex" "/home/stwhite/tekuma/report/tekuma_report.pdf" "tekuma_report" 1493838560
+["pdflatex"] 1493843942 "tekuma_report.tex" "/home/stwhite/tekuma/report/tekuma_report.pdf" "tekuma_report" 1493843943
   "./img/artist.jpg" 1492183755 126030 2d35fd36da3f7f624c877b1620a306fe ""
   "./img/curator.png" 1487182882 491212 7b02063ed9f442784c8e018dcd3439cb ""
   "./img/tekuma-1.png" 1493084588 39865 42f77239fdddcd22e0cdf6b756c571aa ""
   "/etc/texmf/web2c/texmf.cnf" 1488760665 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/stwhite/tekuma/report/tekuma_report.aux" 1493838560 3260 a4ac1672acbe21ab240f227865bf618d ""
+  "/home/stwhite/tekuma/report/tekuma_report.aux" 1493843943 3263 b5171c9c98146d245b3b88fdbffc6439 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -119,11 +119,11 @@
   "img/artist.jpg" 1492183755 126030 2d35fd36da3f7f624c877b1620a306fe ""
   "img/curator.png" 1487182882 491212 7b02063ed9f442784c8e018dcd3439cb ""
   "img/tekuma-1.png" 1493084588 39865 42f77239fdddcd22e0cdf6b756c571aa ""
-  "tekuma_report.aux" 1493838560 3260 a4ac1672acbe21ab240f227865bf618d ""
-  "tekuma_report.tex" 1493838525 20581 4bd676be867f8d116c212918e63699da ""
+  "tekuma_report.aux" 1493843943 3263 b5171c9c98146d245b3b88fdbffc6439 ""
+  "tekuma_report.tex" 1493843939 21606 7ca2cb8c7712b8511474af4d9d350b75 ""
   (generated)
-  "tekuma_report.aux"
-  "/home/stwhite/tekuma/report/tekuma_report.pdf"
   "tekuma_report.pdf"
+  "/home/stwhite/tekuma/report/tekuma_report.pdf"
   "/home/stwhite/tekuma/report/tekuma_report.log"
+  "tekuma_report.aux"
   "tekuma_report.log"

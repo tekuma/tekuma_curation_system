@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  3 MAY 2017 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.3.5)  3 MAY 2017 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -471,12 +471,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[4]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
@@ -492,64 +491,54 @@ Missing character: There is no ™ in font ptmr7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <./img/curator.png, id=22, 1673.25125pt x 915.42pt>
+<./img/curator.png, id=22, 1673.25125pt x 915.42pt>
 File: ./img/curator.png Graphic file (type png)
  <use ./img/curator.png>
-Package pdftex.def Info: ./img/curator.png used on input line 122.
+Package pdftex.def Info: ./img/curator.png used on input line 123.
 (pdftex.def)             Requested size: 334.64432pt x 183.08075pt.
- [5 <./img/curator.png>] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--171
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+ [5 <./img/curator.png>] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (34.2501pt too wide) in paragraph at lines 176--177
+Overfull \hbox (34.2501pt too wide) in paragraph at lines 182--183
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
 
 
-Overfull \hbox (12.64989pt too wide) in paragraph at lines 179--180
+Overfull \hbox (12.64989pt too wide) in paragraph at lines 185--186
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (19.84996pt too wide) in paragraph at lines 182--183
+[8]
+Overfull \hbox (19.84996pt too wide) in paragraph at lines 188--189
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.0504pt too wide) in paragraph at lines 183--184
+Overfull \hbox (63.0504pt too wide) in paragraph at lines 189--190
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 184.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 190.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 184.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 189.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 190.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 195.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [8]
-Overfull \hbox (23.16483pt too wide) in paragraph at lines 196--197
+)
+Overfull \hbox (23.16483pt too wide) in paragraph at lines 202--203
 []\OT1/ptm/b/n/12 Inceptionism: Go-ing Deeper into Neu-ral Net-works \OT1/ptm/m/n/12 ($\OT1/pcr/m/n/12 https : / / research . googleblog .
  []
 
 
-Overfull \hbox (9.36276pt too wide) in paragraph at lines 196--197
+Overfull \hbox (9.36276pt too wide) in paragraph at lines 202--203
 \OT1/pcr/m/n/12 com / 2015 / 06 / inceptionism-[]going-[]deeper-[]into-[]neural . html$\OT1/ptm/m/n/12 ) Dis-cus-sion
  []
 
@@ -559,15 +548,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7563 strings out of 493013
- 117406 string characters out of 6135683
- 300634 words of memory out of 5000000
- 10949 multiletter control sequences out of 15000+600000
+ 7567 strings out of 493013
+ 117464 string characters out of 6135683
+ 298464 words of memory out of 5000000
+ 10953 multiletter control sequences out of 15000+600000
  37210 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,11n,51p,8872b,1339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,11n,51p,8872b,1687s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (10 pages, 867652 bytes).
+Output written on /home/stwhite/tekuma/report/tekuma_report.pdf (10 pages, 868530 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

@@ -150,26 +150,30 @@ Eventually, data on the Discover portal from sales and product cataloging from S
 
 \section{Databases}
 \subsection{Arist Database}
-Branches of the firebase database.
-Used to handle state of artist.tekuma.io interface
+Generally, the Firebase Databases are used to handle interface state. In the Artist Portal, it stores all the data for each user, including their information and uploaded artworks. To directly interact with the database, go to:
+https://console.firebase.google.com/project/artist-tekuma-4a697/database/data \\
+The database has 3 branches from root, \_private, jobs, and public. \_private and public then both have an onboarders branch, keyed by all artist UIDs. The jobs branch acts as the stack for the artist daemon.
 
 \subsection{Curator Database}
-branches of the firebase database
-Used to handle state of the curator.tekuma.io interface
+The Curator Database holds all of the Curator's state data (like users, projects, etc). The Curator Firebase database also holds the 4 review branches submissions, held, approved, and declined. The Curator Firebase database can be accessed at : \\
+https://console.firebase.google.com/project/curator-tekuma/database/data
+
 
 \subsection{Tekuma Artwork DB}
-The SQL database contains 6 tables, (artworks, artist, associations, locations, collections, labels). Each artwork has an entry in the artworks table, keyed by the artwork UID. Each row contains: \\
+The SQL database contains 6 tables, (artworks, artist, associations, locations, collections, labels). Each artwork has an entry in the artworks table, keyed by the artwork UID. Each row contains:
+\begin{itemize}
+    \item uid (char)
+    \item title (char)
+    \item description (text)
+    \item artist\_uid (char)
+    \item date\_of\_addition (DATETIME)
+    \item date\_of\_creation (DATETIME)
+    \item thumbnail\_url (char)
+    \item origin (char)
+    \item reverse\_lookup (char)
+    \item META (blob)
+\end{itemize}
 
-* - uid (char) \\
-* - title (char)\\
-* - description (text)\\
-* - artist\_uid (char)\\
-* - date\_of\_addition (DATETIME)\\
-* - date\_of\_creation (DATETIME) \\
-* - thumbnail\_url (char) \\
-* - origin (char) \\
-* - reverse\_lookup (char) \\
-* - META (blob) \\
 
 \subsection{Art.com Database}
 The Art.com Database, which is roughly 10MB, contains \textbf{2,311,390} rows of data, in structured SQL format. Examples of these rows are below.\\
@@ -206,9 +210,8 @@ actual_row = [ '30742196502A',
  This section details methods which are \textit{content-based}, meaning that the features of the artwork are directly considered by the system. This relies on the assumption that all artworks in the system have a concrete list of their features, known as a feature vector. Features in this vector have a numerical representation, and are chosen such that they partition the artworks into separate sets which people might conceivably assign different preferences to. Then, each use is assigned a vector, $\theta$, which is continually updated to reflect the user's preferences. When this vector is initialized (usually with random values), it is not very powerful. This is known as the cold-start problem. Methods for circumventing cold start can "borrow" data from other places. Specifically, data could be borrowed from similar users, such as descbried in the previous section with collaborative filtering. The user could also be presented with a survey of his art tastes, which could be used to initialize the vector to something more accurate than if it was just set to random values. Given a feature vector $x^{(i)}$, we can predict a rating $\hat{y}$ by:
  $$ \hat{y}^{(i)} = \theta \cdot x^{(i)} = \sum_{j=1}^d \theta_jx^{(i)}_j $$
 
-
-- "Good features are those that partition the artworks into sets that people might
-conceivably assign different preferences to"
+It is important to note that good features are those that partition the artworks into sets that people might
+conceivably assign different preferences to.
 
 
 \end{document}
