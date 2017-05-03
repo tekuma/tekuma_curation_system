@@ -43,7 +43,7 @@
 \horrule{0.2pt} \\[10pt] % Thin top horizontal rule
 \Huge The Tekuma Art Curation System  % The assignment title
 \horrule{1.5pt}  % Thick bottom horizontal rule
-\normalsize \{stwhite,anyati\}@mit.edu
+\normalsize \{stwhite, anyati\}@mit.edu
 }
 \author{\textbf{Stephen L. White and Afika Nyati}}
 \date{\normalsize \today} % Today's date or a custom date
@@ -54,7 +54,7 @@
 \maketitle % Print the title
 
 \section{Overview}
-There has been approximately one year to date of active, ongoing technologies development at Tekuma, Inc. When development began in June 2016, very little web infrastructure existed besides the tekuma homepage\footnote{http://tekuma.io. A WordPress static website}. The first goal realized was to build a system for onboarding, cataloging, and accessing artworks in an effort to streamline the art curation process happening at Tekuma, and provide a more scalable business model. One year later, much of the infrastructure for this goal has been implemented, and is ready for innovative and more marketable applications to be built on top of this curation infrastructure. (give a total count of lines of code, components, etc)
+There has been approximately one year to date of active, ongoing technologies development at Tekuma, Inc. When development began in June 2016, very little web infrastructure existed besides the tekuma homepage\footnote{http://tekuma.io. A WordPress static website}. The first goal realized was to build a system for onboarding, cataloging, and accessing artworks in an effort to streamline the art curation process happening at Tekuma, and provide a more scalable business model. One year later, much of the infrastructure for this goal has been implemented, and is ready for innovative and more marketable applications to be built on top of this curation infrastructure. Over 100,000 lines of code exist in Tekuma's repositories, accounting for multiple web applications and server back-ends. The following details these components.
 
 \section{Components}
 The infrastructure which would most help Tekuma’s curation process was not clear at the time development began. Design decisions were made as they arose, as Tekuma's needs and use cases were evolving with the development. Different prototypes were being tested to analyze different possible web technologies that could be used. After two weeks of prototyping, it became apparent that some preliminary specification needed to be defined in order to structure development of the core infrastructure and to drive production forward. In June 2016, Stephen decided that a four-sided approach would best meet the needs of Tekuma’s complex business model, and multiple targeted users. Specifically, an underlying cloud-based system serves 4 web apps to act as portals into different parts of Tekuma's curation system. These web apps are referred to as the ABCD user abstraction. This model is described below and summarized in figure (2.1), where each entry represents an online hosted application. All code connected to the curation system is stored in Tekuma's GitHub. \footnote{https://github.com/tekuma}
@@ -84,7 +84,7 @@ The infrastructure which would most help Tekuma’s curation process was not cle
 \end{figure}
 
 \subsection{Boilerplate}
-Before creating the web applications, a general boilerplate was designed for online user interfaces. The boilerplate makes up Tekuma’s online graphic and visual identity. The UI primarily defaults to customs and principles dictated by Google’s Material Design\footnote{ https://material.io/guidelines/ } in line with the current standards in User Interface design. Also included with the boilerplate is Tekuma’s general CSS stylesheet, and a set of interface icons created by Afika Nyati. The style sheet builds upon the material design guidelines by customizing it to Tekuma’s aesthetics. More technically, the interface is written in JavaScript ES6+ using ReactJS, transpiled using webpack and BabelJS. State in the interfaces, user account creation, and file uploads are all handled by Google Firebase and managed in the Firebase Conosole\footnote{}. For simplicity, all code in the system is written in JavaScript and is either executed in-browser, or with NodeJS (v6.4.0LTS). Together, the stylesheet, ReactJS interface components, logo, color palette and gradient, type choices (Nexa font, utf-8) makeup Tekuma’s online visual identity, an extrapolation of Tekuma’s brand identity developed by Kwaku Opoku in collaboration with Tekuma’s founders. (do we hold trademarks on the font usage?)
+Before creating the web applications, a general boilerplate was designed for online user interfaces. The boilerplate makes up Tekuma’s online graphic and visual identity. The UI primarily defaults to customs and principles dictated by Google’s Material Design\footnote{ https://material.io/guidelines/ } in line with the current standards in User Interface design. Also included with the boilerplate is Tekuma’s general CSS stylesheet, and a set of interface icons created by Afika Nyati. The style sheet builds upon the material design guidelines by customizing it to Tekuma’s aesthetics. More technically, the interface is written in JavaScript ES6+ using ReactJS, transpiled using webpack and BabelJS. State in the interfaces, user account creation, and file uploads are all handled by Google Firebase and managed in the Firebase Conosole. For simplicity, all code in the system is written in JavaScript and is either executed in-browser, or with NodeJS (v6.4.0LTS). Together, the stylesheet, ReactJS interface components, logo, color palette and gradient, type choices (Nexa font, utf-8) makeup Tekuma’s online visual identity, an extrapolation of Tekuma’s brand identity developed by Kwaku Opoku in collaboration with Tekuma’s founders. (do we hold trademarks on the font usage?)
 
 
 \subsection{Artist}
@@ -95,17 +95,28 @@ Before creating the web applications, a general boilerplate was designed for onl
 \end{figure}
 The first component designed and implemented was the beta version of the Artist portal. The Artist portal is powered primarily by Google Firebase, and was originally designed to function without server-side code as a staticly served interface. All communications from the portal to the rest of the curation system are handled through the Firebase Realtime Database. The Artist Portal provides two main functionalities to its users, as well as a standard interface for editing and supplying personal information about themselves and their artistic style.\\
 
-\subsubsection{Artist Studio}
-The primary goal of the portal is to handle uploaded and cataloging of artworks. All uploaded files are saved into Google Cloud Storage buckets, located at in the Cloud Console\footnote, and all data cataloged in hierarchical (non-structural) format in the Firebase Database. The organization of these files within the storage buckets is detailed further in url-schema.md in the Documentation repositiory\footnote{}. Later, functionality was added to do extra processing on uploaded artworks to provide more labeled data. This functionality exceeded the scope of client-side execution, and integrating HTTP communication to a server would incure a large overhead. Instead, a daemon running on a Google Compute Engine (GCE) cloud-hosted server handles this extra processing. Communication to the daemon is facilitated by Google Firebase’s real-time database where a first-in-first-out (FIFO) stack is used to keep track of jobs for the daemon to execute. The extra labeling includes gathering text tags and color palletes from the uploaded images using machine-vision technology, and is further explained in (X.X).
 
+\subsubsection{Artist Studio}
+The primary goal of the portal is to handle uploaded and cataloging of artworks. All uploaded files are saved into Google Cloud Storage buckets, located at in the Cloud Console\footnote{https://console.cloud.google.com/storage/browser/art-uploads/?project=artist-tekuma-4a697}, and all data cataloged in hierarchical (non-structural) format in the Firebase Database. The organization of these files within the storage buckets is detailed further in url-schema.md in the Documentation repositiory\footnote{ https://github.com/tekuma/documentation}. In the Studio, artists can organize their artworks into albums, edit the name and creator of the artwork, add or remove tag words, add a date of creation, as well as leave a description of the artwork. Whenever an artist is satisfied with the information supplied with the artwork, they can submit button (an up arrow) on the artwork tile. This will appear in the Curator app, explained in (X.x.x).
 
 \subsubsection{Artist Gallery}
+The artist Gallery provides a list of all artworks which they have submitted to Tekuma. When one is clicked, more information appears, such as the review status (pending, approved, declined, or held), and any comments from the reviewing staff. Infromation such as sales data for that artwork can also be displayed here.
+
+\subsubsection{Artist Admin Mode}
+The Artist Portal also has an admin mode. This was explicitly created so that Tekuma Administrators can impersonate artsits and update/submit/change artwork details on their behalf. Which users are admins is explictly stated in the source code, and Firebase Database rules.
+
+
+\subsubsection{Artist Daemon}
+Later, functionality was added to do extra processing on uploaded artworks to provide more labeled data. This functionality exceeded the scope of client-side execution, and integrating HTTP communication to a server would incure a large overhead. Instead, a daemon running on a Google Compute Engine (GCE) cloud-hosted server handles this extra processing. Communication to the daemon is facilitated by Google Firebase’s real-time database where a first-in-first-out (FIFO) stack is used to keep track of jobs for the daemon to execute. Jobs added to the stack have different task fields for things like resizing an image, submitting an artwork, and tagging an image. The extra labeling includes gathering text tags and color palletes from the uploaded images using machine-vision technology via the Clarif.ai API\footnote{https://www.clarifai.com/}. The Artist Daemon also serves another purpose. Data about submitted/approved artworks is stored in the Curator's Firebase database. This prevents any artist from having write permission to their submissions. But since the artist can not write in order to submit an artwork, it sends a job to the Artist Daemon, and the daemon submits into the Curator's Firebase DB.
 
 \subsection{Business}
+The Tekuma Business portal has not yet been implemented.\\
+
 \subsection{Curator}
 
+The curator portal serves as a place where Tekuma’s proprietary data (from the Artist Portal, or from partnerships) is stored. The curator portal also serves as an administrative portal for artworks submitted from the artist portal. The curator portal also has infrastructure to serve as an administrative system over the artist portal, by deciding what data is moved from the artist-portal database, into curator-portal’s database.
+The curator-portal’s database serves as Tekuma’s proprietary listing of curatable artwork, and therefore has more isolation than the artist-portal’s database. Additionally, the curator database is an SQL database, served from a Google Cloud SQL instance running MySQL. The SQL database is more efficient for searches than the NoSQL structure used by Firebase.
 
-server and daemon (modularity)
 
 \subsubsection{Curator Search}
 \begin{figure}
@@ -114,16 +125,28 @@ server and daemon (modularity)
     \label{}
 \end{figure}
 
-\subsubsection{Curator Manage}
-\subsubsection{Curator Review}
-(discuss daemon)
-\subsection{Discover}
+The curator portal provides a very rich interface for queries which accepts words, colors, tag words, dates, and details about artists. In the figure on the right, full details about a search result are displayed. Notice the tag words, description field, and color palette associated with image.
+Search results can then be added to a Project, in similar fashion to how you add items to a cart in an e-commerce user experience. Queries are sent from the interface to the curator-server\footnote{https://console.cloud.google.com/compute/instancesDetail/zones/us-east1-c/instances/curator-tekuma-1} via HTTPS (AJAX). The server then communicates the queries to the MySQL instance, and returns the result to the interface.  The server back-end uses an open-source solution (Node.js) and is served with nginx\footnote{https://nginx.org/en/}.
 
+\subsubsection{Curator Manage}
+These projects have their own interface, where curators can: share the project with other curators, leave notes and comments on the project, download images from the project, and export all data from the project in CSV format.
+
+\subsubsection{Curator Review}
+Curator's review interface acts an administrative interface over artworks submitted from the artist portal. Artworks enter as Submitted, and can be moved to: Declined, Approved, or Held.  Approved and Declined are terminal states, once the artwork is moved there it is either inserted into the SQL database, or deleted. Items moved to held allow the Artist to make changes to the information about the artwork, and re-submit it. Upon re-submitting, the artwork is removed the held branch and added to the Submitted branch again.
+
+\subsubsection{Curator Daemon}
+The Curator Daemon serves multiple functions. It acts as a user with access to both the Artist and Curator Firebase Database. First, when a Curator (in Review) moves an artwork into the 'held' branch, the daemon unlocks that artwork. This is because when an artist submits an artwork, it becomes locked since curators have been notified and the data needs to remain constant until the review.
+The Curator Daemon is also responsible for inserting newly approved artworks into the SQL database. To do this, it establishes a connection to the MySQL server in Google Cloud, and forms a transaction for all of the artwork's relevant data, and executes the transaction. If they transaction was successful, the respective (with same artwork uid) artwork object in the Approved branch of the Curator Firebase DB with have a field of 'sql: true'.
+
+\subsection{Discover}
+The Discover Portal serves as the consumer-facing e-commerce store where arbitrary consumers can buy individual prints. The website is currently managed with a WordPress backend, using Shopify for handling e-commerce technologies. There is currently no proprietary infrastructure involved with the Discover Portal.
 
 \section{Unfinished Components}
 \subsection{Business}
+No work on the business portal has been done. Conceptually, the business portal would use the same interface boilerplate as the artist and curator portals, and would allow for business users to have a dashboard of the properties with information the curation that is happening in these properties. Currently, the functionality of the business portal is handled by sales, and automation is not crucial.
+
 \subsection{Discovery}
-% databasing all sales, and logging buyer behavior for data mining
+Eventually, data on the Discover portal from sales and product cataloging from Shopify (accessible via the Shopify API) should be connected a table in the SQL database. Currently, this data is kept separte from the existing infrastructure and is only accessible through scripts or user interfaces. Linking this data together would allow for more automation, and would allow sales figures to be reflected in the Artist Portal. Additionally, data should be collected on the Discover portal about which artworks each user likes, for later machine learning analysis.
 
 \section{Databases}
 \subsection{Arist Database}
@@ -135,6 +158,18 @@ branches of the firebase database
 Used to handle state of the curator.tekuma.io interface
 
 \subsection{Tekuma Artwork DB}
+The SQL database contains 6 tables, (artworks, artist, associations, locations, collections, labels). Each artwork has an entry in the artworks table, keyed by the artwork UID. Each row contains: \\
+
+* - uid (char) \\
+* - title (char)\\
+* - description (text)\\
+* - artist\_uid (char)\\
+* - date\_of\_addition (DATETIME)\\
+* - date\_of\_creation (DATETIME) \\
+* - thumbnail\_url (char) \\
+* - origin (char) \\
+* - reverse\_lookup (char) \\
+* - META (blob) \\
 
 \subsection{Art.com Database}
 The Art.com Database, which is roughly 10MB, contains \textbf{2,311,390} rows of data, in structured SQL format. Examples of these rows are below.\\
