@@ -275,6 +275,23 @@ Existing infrastructure could be used to implement a social network between cura
 \subsection{Cross-Media Recommendation}
 Another interesting recommendation direction to explore, that to our best knowledge has yet to be implemented, is a recommendation system that recommends selected works from one medium based on the characteristics of a different medium. For example, using selected music catalogs or written media, such as poetry, to recommend (curate) a set of visual artworks. With regards to the choice of recommendation media, the most feasible choices would be those that are text-based, such as poems, or aurally-based, such as music.
 
+\subsection{Interactive Art Gallery Experience}
+An interactive gallery experience can be described as having a gallery in which patrons can interact with the artwork to learn more about it and its artist using technology. The simplest way to do this would be for patrons to use their phones as an interface to the artwork, with mobile apps or a web app. The difficult part is knowing which artwork the patron is standing in front of. There are a number of possible ways to engineer a solution:
+\begin{enumerate}
+    \item GPS/WiFi: the standard way your phone calculates location. Is highly reliable, but does not provide good accuracy indoors.
+    \item Stylized QR codes. QR codes are still in wide use, and expanding in popularity in some areas. QR codes offer 100\% success on knowing which artwork the patron is standing at, but requires them to use a QR scanner each time.
+    \item WiFi location sensing. Implementations such as SpotFi\footnote{\url{http://web.stanford.edu/~skatti/pubs/sigcomm15-spotfi.pdf}}, use commodity routers to guess the location of devices connected to routers. Great success has been had recently, and they can be accurate to 40cm even through walls, using open source solutions\footnote{\url{https://www.internalpositioning.com/}, \url{https://github.com/schollz/find}}.
+\end{enumerate}
+
+One of these methods described above could be implemented to provide localization to the interactive gallery experience. After localization is achieved, numerous features could be added such as:
+\begin{enumerate}
+    \item 3-D gallery of other artworks by that artist. Using three.js, a 3d room could be modeled, and users could pan their phones around to see in other directions, similar to a 3D video on facebook.
+    \item More information the artwork and author can be displayed
+    \item Sales information and a link to buy the artwork can be displayed
+    \item Some sort of tailored AR experience mixing the location localization, phone, phone camera, and artwork could be devised. Perhaps this could be a model for AR art or "ARt"
+\end{enumerate}
+
 \section{Conclusion}
+In summary, the foundation of Tekuma's platform and computer system have been set. Cloud computation has allowed for no physical servers to be used, and all servers, storage buckets, and databases are located in Google Cloud Console. Current operational costs are minimal, and the plaform is designed to scale. While a testing suite should be implemented to ensure the stablility of the system, and an audit of security (passwords, keys, accounts, etc) should be done before any further expansions, the platform is ready for more inovative applications to build upon it.
 
 \end{document}
